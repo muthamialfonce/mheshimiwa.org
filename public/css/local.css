@@ -1,0 +1,24 @@
+.number_list{
+    width: 500px;
+    margin:10px;
+}
+.number_list > ol {
+    color: #ccc;
+    list-style-type: none;
+}
+.number_list > ol >li {
+    position: relative;
+    font: bold italic 45px/1.5 Helvetica, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.number_list > li >p {
+    font: 12px/1.5 Helvetica, sans-serif;
+    padding-left: 60px;
+    color: #555;
+}
+
+.number_list > span {
+    position: absolute;
+}
+

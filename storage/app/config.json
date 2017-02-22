@@ -1,0 +1,359 @@
+{
+  "admin":[
+    {
+      "name":"Politician Profile Management",
+      "slug":"political_levels",
+      "type":"many",
+      "label":"Aspirants",
+      "icon":"fa fa-user",
+      "children":[
+
+      ],
+      "urls":[
+        "user/profile",
+        "profile/view",
+        "myprofile",
+        "aspirants/view/all",
+        "profile/approve",
+        "profile/disapprove",
+        "user/donations",
+        "view_politician",
+        "parties/view",
+        "parties/edit_add",
+        "user/donations/process",
+        "user/change-role"
+      ]
+    },
+    {
+      "name":"Payment Details",
+      "slug":"payment_details",
+      "type":"many",
+      "label":"Payments",
+      "icon":"fa fa-money",
+      "children":[
+        {
+          "url":"payments/mpesa",
+          "label":"Mpesa Payments"
+        },
+        {
+          "url": "payments/paypal",
+          "label": "Paypal Payments"
+        }
+      ],
+      "urls":[]
+    },
+    {
+      "name":"Donations",
+      "slug":"donations",
+      "type":"many",
+      "label":"Donations",
+      "icon":"fa fa-money",
+      "children":[
+        {
+          "url":"payments/mpesa-donations",
+          "label":"Mpesa Donations"
+        },
+        {
+          "url":"payments/paypal-donations",
+          "label":"Paypal Donations"
+        }
+      ],
+      "urls":[]
+    },
+    {
+      "name":"Location Management",
+      "slug":"location_management",
+      "type":"many",
+      "label":"Locations",
+      "icon":"fa fa-globe",
+      "children":[
+        {
+          "url":"regions",
+          "label":"Regions"
+        },
+        {
+          "url":"counties",
+          "label":"Counties"
+        },
+        {
+          "url":"constituencies",
+          "label":"Constituencies"
+        },
+        {
+          "url":"wards",
+          "label":"Wards"
+        }
+      ],
+      "urls":[
+        "regions/delete",
+        "counties/delete",
+        "constituencies/delete",
+        "wards/delete"
+      ]
+    },
+    {
+      "name":"Political Details Management",
+      "slug":"political_details_management",
+      "type":"many",
+      "label":"Politics",
+      "icon":"fa fa-newspaper-o",
+      "children":[
+        {
+          "url":"parties",
+          "label":"Parties"
+        },
+        {
+          "url":"levels",
+          "label":"Levels"
+        },
+        {
+          "url":"seats",
+          "label":"Seats"
+        }
+      ],
+      "urls":[
+        "parties/delete",
+        "levels/delete",
+        "seats/delete"
+      ]
+    },
+    {
+      "name":"Profile Management",
+      "slug":"profile_management",
+      "type":"many",
+      "label":"Profile",
+      "icon":"fa fa-user",
+      "children":[
+      {
+        "url":"academic",
+        "label":"Academic Levels"
+        }
+      ],
+      "urls":[
+        "academic/delete"
+      ]
+    },
+    {
+      "name":"Config Management",
+      "slug":"config_management",
+      "type":"many",
+      "label":"Config",
+      "icon":"fa fa-cog",
+      "children":[
+        {
+          "url":"rates",
+          "label":"Rates"
+        },
+        {
+          "url":"config",
+          "label":"Service Fee"
+        }
+      ],
+      "urls":[
+        "rates/delete"
+      ]
+    },
+    {
+      "name":"User Management",
+      "slug":"user_management",
+      "type":"many",
+      "label":"Users",
+      "icon":"fa fa-user",
+      "children":[
+        {
+          "url":"user/admins",
+          "label":"Admins"
+        },
+        {
+          "url":"user/editors",
+          "label":"Editors"
+        }
+      ],
+      "urls":[
+        "rates/delete"
+      ]
+    }
+  ],
+  "editor":[
+    {
+      "name":"Pages",
+      "slug":"page_management",
+      "type":"single",
+      "menus":{
+        "label":"Pages",
+        "icon":"fa fa-book",
+        "url":"pages"
+      },
+      "urls":[
+        "pages/delete",
+        "pages/add",
+        "pages/edit"
+      ]
+    }
+  ],
+  "politician":[
+    {
+      "name":"Account",
+      "slug":"account_details",
+      "type":"single",
+      "menus":{
+        "label":"Account",
+        "icon":"fa fa-dashboard",
+        "url":"account"
+      },
+      "urls":[
+        "user/complete_profile",
+        "user/aspiring_position",
+        "account/add_history",
+        "account/history/delete",
+        "account/profile_image",
+        "account/social_media",
+        "user/profile",
+        "myprofile",
+        "view_politician",
+        "paypal/pay",
+        "paypal/charge",
+        "paypal/success",
+        "profile_comments/approve",
+        "profile_comments/disapprove",
+        "profile_comments/delete",
+        "my_donations/withdraw"
+      ]
+    },
+    {
+      "name":"Event",
+      "slug":"event_management",
+      "type":"single",
+      "menus":{
+        "label":"My Events",
+        "icon":"fa fa-clock-o",
+        "url":"events"
+      },
+      "urls":[
+        "events/delete"
+      ]
+    },
+    {
+      "name":"Agenda",
+      "slug":"agenda_management",
+      "type":"single",
+      "menus":{
+        "label":"My Agendas",
+        "icon":"fa fa-check",
+        "url":"agendas"
+      },
+      "urls":[
+        "agendas/delete"
+      ]
+    },
+    {
+      "name":"Education",
+      "slug":"education_details",
+      "type":"many",
+      "icon":"fa-book",
+      "label":"Bio",
+      "children":[
+        {
+          "label":"Education",
+          "url":"education"
+        },
+        {
+          "label":"Achievement",
+          "url":"achievement"
+        },
+        {
+          "label":"Work Experience",
+          "url":"experiences"
+        }
+      ],
+      "urls":[
+        "education/delete",
+        "achievement/delete",
+        "experiences/delete"
+      ]
+    },
+    {
+      "name":"Donations",
+      "slug":"donations",
+      "type":"single",
+      "menus":{
+        "label":"Donations",
+        "icon":"fa fa-money",
+        "url":"my_donations"
+      },
+      "urls":["experiences/delete"]
+    },
+    {
+      "name":"Portfolio",
+      "slug":"portfolio",
+      "type":"single",
+      "menus":{
+        "label":"Portfolio",
+        "icon":"fa fa-picture-o",
+        "url":"portfolio"
+      },
+      "urls":["portfolio/add"]
+    }
+  ],
+  "guest":[
+    {
+      "name":"Home",
+      "slug":"home",
+      "type":"single",
+      "menus":{
+        "label":"Home",
+        "icon":"fa fa-user",
+        "url":""
+      },
+      "urls":["mpesa/pay","donations/to","donations/charge","donations/donate_mpesa","donations/mpesa_success"]
+    },
+    {
+      "name":"My Politician",
+      "slug":"my_politician",
+      "type":"single",
+      "menus":{
+        "label":"My Region",
+        "icon":"fa fa-user",
+        "url":"region"
+      },
+      "urls":["logout"]
+    }
+  ],
+  "out":[
+    {
+      "name":"Login",
+      "slug":"login",
+      "type":"single",
+      "menus":{
+        "label":"Login",
+        "icon":"fa fa-user",
+        "url":"login"
+      },
+      "urls":[]
+    },
+    {
+      "name":"Register",
+      "slug":"register",
+      "type":"single",
+      "menus":{
+        "label":"Register",
+        "icon":"fa fa-plane",
+        "url":"register"
+      },
+      "urls":[ ]
+    }
+  ],
+  "in":[
+    {
+      "name":"Dashboard",
+      "slug":"dashboard",
+      "type":"single",
+      "menus":{
+        "label":"Dashboard",
+        "icon":"fa fa-plane",
+        "url":"levels"
+      },
+      "urls":[ ]
+    }
+  ]
+}
